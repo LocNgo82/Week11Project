@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <m-p0-eta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- <script src="node_modules/popper/@popperjs/core/dist/umd/popper.min.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+
+</head>
+<body >
+<!--
+    Based on Maja Maj's Tic-Tac-Toe
+    Retrieve from https://mdbootstrap.com/snippets/jquery/maja_maj/1437537
+
+    Below use bootstrap container
+-->
+    <div class="container" id="main">
+        <!-- Display the tic-tac-toe grids -->
+        <span id="turn">Tic Tac Toe</span>
+        <!-- create 9 boxes for the game board -->
+        <div class="box" style="border-left: 0; border-top: 0" id="box1"></div>
+        <div class="box" style="border-top: 0" id="box2"></div>
+        <div class="box" style="border-top: 0; border-right: 0" id="box3"></div>
+        <div class="box" style="border-left: 0" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" style="border-right: 0" id="box6"></div>
+        <div class="box" style="border-left: 0; border-bottom: 0" id="box7"></div>
+        <div class="box" style="border-bottom: 0" id="box8"></div>
+        <div class="box" style="border-right: 0; border-bottom: 0" id="box9"></div>
+        
+      </div>
+      <div>
+        <!-- display replay button and the bootstrap alert message box -->
+        <div class="container" id="btn" >
+            <button class="btn btn-rounded" id="replay">Play Again</button>
+            <div id="liveAlertPlaceholder"></div>
+        </div>
+     </div>
+      <script src="tic-tac-toe.js"></script>
+      
+</body>
+</html>
